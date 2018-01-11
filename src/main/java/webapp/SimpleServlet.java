@@ -19,3 +19,8 @@ public class SimpleServlet extends HttpServlet{
         resp.setHeader("content-encoding", "daasUTF");
     }
 }
+
+/*client_id: oXyIJHyF8P5Jo7ICAL9MkykCU45ATbE5
+        client_secret: E8DM3iz15RJ7WWoZqgiT5AvkPHOrjuFr
+        URL возврата: https://176.241.109.185
+*/

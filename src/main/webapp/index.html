@@ -9,5 +9,21 @@
         <a href="https://google.com.ua"> Google link  </a>
         <p></p>
         <a href="simpleservlet"> Servlet  </a>
+        <button type="button" onclick="myFunc()">Try it</button>
+        <script src=script/jquery-1.11.3.min.js type="text/javascript">
+            function myFunc() {
+                $.ajax({
+                    type: 'GET',
+                    url: 'simpleservlet',
+                    data: {id: 1, text: "GET on servlet"},
+                    success: function (data) {
+                        alert(data);
+                    },
+                    error: function (error) {
+                        console.log(error);
+                    }
+                });
+            }
+        </script>
     </body>
 </html>

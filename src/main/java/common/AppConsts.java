@@ -7,5 +7,5 @@ import utils.PropertyLoader;
  */
 public class AppConsts {
 
-    final String APP_MOBILE_ID_URL = PropertyLoader.load();
+    final String APP_MOBILE_ID_URL = PropertyLoader.load("");
 }

@@ -10,20 +10,20 @@ public class PropertyLoader {
 
     public PropertyLoader getInstance()
     {
-        if (instance==null)
-        {
-
-        }
+        return instance;
     }
 
     public PropertyLoader(String filename)
     {
         this.filename=filename;
+        if (instance==null)
+            instance=new PropertyLoader(filename);
     }
 
-    public String load(String name)
+    public static String load(String name)
     {
-
+        return "";
     }
+
 
 }

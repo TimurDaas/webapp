@@ -23,4 +23,9 @@ public class SimpleServlet extends HttpServlet{
 /*client_id: oXyIJHyF8P5Jo7ICAL9MkykCU45ATbE5
         client_secret: E8DM3iz15RJ7WWoZqgiT5AvkPHOrjuFr
         URL возврата: https://176.241.109.185
+
+        client_id: 8HyfiUokftWnCO4mV15vcg0d30Jt0939
+client_secret: b9yGGSuoK68kz64ehyglrAxwDfkSjAdI
+URL1: https://176.241.109.185/oauth
+URL2: http://localhost:8080/webapp-1.0-SNAPSHOT/mobileid
 */

@@ -7,7 +7,7 @@ import java.sql.Connection;
 import java.sql.Statement;
 import java.util.Properties;
 
-import com.mysql.jdbc.*;
+
 /**
  * Created by тимур50 on 13.01.2018.
  */

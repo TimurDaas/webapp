@@ -16,3 +16,4 @@ target
 /config/keystore
 /config/*.config
 /config/license.*
+/config/iit.*

@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app id="ifobsclient" version="2.5" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" metadata-complete="true">
+<web-app id="mywebapp" version="3.0" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" metadata-complete="true">
 <!--<web-app xmlns="http://java.sun.com/xml/ns/javaee" version="2.5">-->
+
+
     <welcome-file-list>
         <welcome-file>index.jsp</welcome-file>
     </welcome-file-list>
@@ -8,13 +10,43 @@
     <filter>
         <filter-name>struts2</filter-name>
         <filter-class>
-            org.apache.struts2.dispatcher.filter.StrutsPrepareAndExecuteFilter
+            ua.com.timur.common.Struts2CustomFilter
         </filter-class>
     </filter>
 
-    <filter-mapping>
+   <filter-mapping>
         <filter-name>struts2</filter-name>
         <url-pattern>/*</url-pattern>
     </filter-mapping>
+
+
+    <servlet>
+        <servlet-name>Init</servlet-name>
+        <servlet-class>ua.com.timur.startup.AppStartUp</servlet-class>
+        <load-on-startup>0</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Init</servlet-name>
+        <url-pattern>/init</url-pattern>
+    </servlet-mapping>
+
+   <servlet>
+       <servlet-name>MobileId</servlet-name>
+       <servlet-class>ua.com.timur.webapp.servlets.mobileid.MobileIdServlet</servlet-class>
+   </servlet>
+   <servlet-mapping>
+        <servlet-name>MobileId</servlet-name>
+        <url-pattern>/mobileid</url-pattern>
+   </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SimpleServlet</servlet-name>
+        <servlet-class>ua.com.timur.webapp.servlets.SimpleServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SimpleServlet</servlet-name>
+        <url-pattern>/simple</url-pattern>
+    </servlet-mapping>
+
 
 </web-app>

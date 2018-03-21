@@ -7,14 +7,15 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
 
-    <name>webapp</name>
+    <name>ua.com.timur.webapp</name>
 
     <properties>
         <endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <struts2.version>2.5.13</struts2.version>
     </properties>
-    
+
+
     <dependencies>
         <dependency>
             <groupId>javax</groupId>
@@ -22,11 +23,16 @@
             <version>7.0</version>
             <scope>provided</scope>
         </dependency>
-        <!--<dependency>-->
-            <!--<groupId>javax.faces</groupId>-->
-            <!--<artifactId>jsf-api</artifactId>-->
-            <!--<version>2.1</version>-->
-        <!--</dependency>-->
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>LATEST</version>
+        </dependency>
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>1.2.17</version>
+        </dependency>
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>

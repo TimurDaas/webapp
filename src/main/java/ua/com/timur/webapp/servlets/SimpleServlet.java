@@ -1,4 +1,4 @@
-package webapp;
+package ua.com.timur.webapp.servlets;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -10,7 +10,7 @@ import java.io.IOException;
 /**
  * Created by тимур50 on 11.01.2018.
  */
-@WebServlet(urlPatterns = "/simpleservlet")
+@WebServlet(name="simple", urlPatterns = "/simpleservlet")
 public class SimpleServlet extends HttpServlet{
 
     @Override

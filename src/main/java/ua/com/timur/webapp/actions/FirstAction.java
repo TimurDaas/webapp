@@ -1,4 +1,4 @@
-package webapp.actions;
+package ua.com.timur.webapp.actions;
 
 
 import com.opensymphony.xwork2.ActionSupport;
